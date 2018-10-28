@@ -71,7 +71,7 @@ A Simple Product Tour and Showcase Plugin for jQuery
 </li>
 ```
 
-> ####Target Element
+> #### Target Element
 > Then target attribute accepts any single element jQuery selector string.
 
 ### Initialization & Methods
