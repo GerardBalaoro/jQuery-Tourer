@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://i.imgur.com/yUMtnyR.png" alt="jQuery-Tourer">
+    <img src="https://imgur.com/WWpReBq.png" alt="jQuery-Tourer">
     <br>
     <a href="https://gerardbalaoro.github.io/jQuery-Tourer/"><img src="https://img.shields.io/badge/See%20It%20In%20Action-Click%20Here-purple.svg" alt="Demo"></a>
     <a href="https://github.com/GerardBalaoro/jQuery-Tourer/releases/latest"><img src="https://img.shields.io/github/release/GerardBalaoro/jQuery-Tourer.svg" alt="VERSION"></a>
