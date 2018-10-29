@@ -9,6 +9,8 @@
 
 ### Getting Started
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b1431713034e4076995b2ba9be4e1493)](https://app.codacy.com/app/gerardbalaoro/jQuery-Tourer?utm_source=github.com&utm_medium=referral&utm_content=GerardBalaoro/jQuery-Tourer&utm_campaign=Badge_Grade_Settings)
+
 * Copy-paste the stylesheet <link> into your <head> to load our CSS.
  
 ```html 
