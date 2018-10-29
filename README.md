@@ -1,7 +1,12 @@
-jQuery-Tourer
-=========================================
+<p align="center">
+    <img src="https://i.imgur.com/yUMtnyR.png" alt="jQuery-Tourer">
+    <br>
+    <img src="https://img.shields.io/github/license/GerardBalaoro/jQuery-Tourer.svg" alt="LICENSE">
+    <img src="https://img.shields.io/github/release/GerardBalaoro/jQuery-Tourer.svg" alt="VERSION">
+</p>
 
-A Simple Product Tour and Showcase Plugin for jQuery
+### Demo
+* https://gerardbalaoro.github.io/jQuery-Tourer/
 
 ### Getting Started
 
@@ -91,9 +96,6 @@ $('.tour-wrapper').trigger('stop-tour'); // Ends Tour
 $('.start-tour').click() // Triggers 'star-tour'
 $('.stop-tour').click() // Triggers 'stop-tour'
 ```
-
-### Documentation
-* https://gerardbalaoro.github.io/jQuery-Tourer/
 
 ### License
 
