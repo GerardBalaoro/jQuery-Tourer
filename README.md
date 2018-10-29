@@ -92,6 +92,9 @@ $('.start-tour').click() // Triggers 'star-tour'
 $('.stop-tour').click() // Triggers 'stop-tour'
 ```
 
+### Documentation
+* https://gerardbalaoro.github.io/jQuery-Tourer/
+
 ### License
 
 Copyright © 2018 Gerard Balaoro 
