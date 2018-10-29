@@ -3,7 +3,8 @@
     <br>
     <a href="https://gerardbalaoro.github.io/jQuery-Tourer/"><img src="https://img.shields.io/badge/See%20It%20In%20Action-Click%20Here-purple.svg" alt="Demo"></a>
     <a href="https://github.com/GerardBalaoro/jQuery-Tourer/releases/latest"><img src="https://img.shields.io/github/release/GerardBalaoro/jQuery-Tourer.svg" alt="VERSION"></a>
-    <a href="https://github.com/GerardBalaoro/jQuery-Tourer/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/GerardBalaoro/jQuery-Tourer.svg" alt="LICENSE"></a>    
+    <a href="https://github.com/GerardBalaoro/jQuery-Tourer/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/GerardBalaoro/jQuery-Tourer.svg" alt="LICENSE"></a>
+    <img src="https://zenodo.org/badge/doi/10.5281/zenodo.1473134.svg" alt="DOI">
 </p>
 
 ### Getting Started
