@@ -108,4 +108,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Credits
 
 * **[CodyHouse/product-tour](https://codyhouse.co/gem/product-tour/)** - This project was forked from the orginal work of CodyHouse, which is published under the [BSD-3 Clause License](https://opensource.org/licenses/BSD-3-Clause).
-* **PrettyDocs Template** - The template used in this project was created by [Xiaoying Riley](https://twitter.com/3rdwave_themes) under the [Creative Commons Attribution 3.0 License (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/). 
