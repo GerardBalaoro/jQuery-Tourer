@@ -107,4 +107,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Credits
 
-* **[CodyHouse/product-tour](https://codyhouse.co/gem/product-tour/)** - This project was forked from the orginal work of CodyHouse, which is published under the [BSD-3 Clause License](https://opensource.org/licenses/BSD-3-Clause).
+* **[CodyHouse/product-tour](https://codyhouse.co/gem/product-tour/)** - This project was forked from the orginal work of CodyHouse, which is published under the [MIT License](https://opensource.org/licenses/MIT).
