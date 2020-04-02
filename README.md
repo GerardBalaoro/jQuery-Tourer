@@ -7,27 +7,32 @@
     <img src="https://zenodo.org/badge/doi/10.5281/zenodo.1473134.svg" alt="DOI">
 </p>
 
-### Getting Started
+## Installation
 
-* Copy-paste the stylesheet <link> into your <head> to load our CSS.
+### Using NPM
+
+```sh
+$ npm install jquery-tourer
+```
+
+### Using Yarn
+
+```sh
+$ yarn add jquery-tourer
+```
+
+### Via CDN
  
 ```html 
-<!-- Tourer CSS -->
-<link rel="stylesheet" href="dist/jquery-tourer.css">
+<!-- Import jQuery first -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/jquery-tourer@1.0.1/dist/jquery-tourer.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jquery-tourer@1.0.1/dist/jquery-tourer.min.css">
 ```
 
-* Since this is a jQuery plugin, make sure that the library was included first before including our <script>.
+## Usage
 
-```html
-<!-- jQuery -->
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<!-- Tourer JS -->
-<script type="text/javascript" src="dist/jquery-tourer.js"></script>
-```
-
-### Usage
-
-* The tour-wrapper class serves as the over all container for all out the tour elements. It contains elements li.tour-step which are the "steps" of the tour.
+Add the `.tour-wrapper` template anywhere inside the `body` tag. The `.tour-overlay` prevents interaction when the tour is activated.
 
 ```html
 <ul class="tour-wrapper">
@@ -47,10 +52,7 @@
 <div class="tour-overlay"></div>
 ```
 
-> #### .tour-overlay
-> This acts as a "barrier" to prevent interaction to the actual webpage elements during mobile mode or when an unbound element is shown.
-
-### Tour Steps
+### Adding Steps
 
 ```html
 <!-- Add 'unbound' class to always show modal instead of a tooltip -->
@@ -75,10 +77,7 @@
 </li>
 ```
 
-> #### Target Element
-> Then target attribute accepts any single element jQuery selector string.
-
-### Initialization & Methods
+### Initialization
 
 ```js
 // Initializate Tour Wrapper
@@ -96,9 +95,9 @@ $('.start-tour').click() // Triggers 'star-tour'
 $('.stop-tour').click() // Triggers 'stop-tour'
 ```
 
-### License
+## License
 
-Copyright © 2018 Gerard Balaoro 
+Copyright © 2020 Gerard Balaoro 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
 
@@ -106,7 +105,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Credits
+## Credits
 
 * **[CodyHouse/product-tour](https://codyhouse.co/gem/product-tour/)** - This project was forked from the orginal work of CodyHouse, which is published under the [BSD-3 Clause License](https://opensource.org/licenses/BSD-3-Clause).
 * **PrettyDocs Template** - The template used in this project was created by [Xiaoying Riley](https://twitter.com/3rdwave_themes) under the [Creative Commons Attribution 3.0 License (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/). 

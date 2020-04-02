@@ -24,6 +24,12 @@
 		"build": "gulp",
 		"watch": "watch"
 	},
+	"unpkg": "dist/jquery-tourer.js",
+	"jsdelivr": "dist/jquery-tourer.js",
+	"files": [
+		"src",
+		"dist"
+	],
 	"prettier": {
 		"semi": false,
 		"singleQuote": true,
