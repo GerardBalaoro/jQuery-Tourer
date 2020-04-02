@@ -1462,7 +1462,8 @@ pre.highlight {
   margin: 25px auto;
 }
 
-code.highlighter-rouge {
+:not(pre) > code.highlighter-rouge,
+:not(pre) > code[class*="language-"] {
   background-color: hsla(200, 82%, 93%, 1);
   color: hsla(200, 82%, 54%, 1);
   border-radius: 5px;
