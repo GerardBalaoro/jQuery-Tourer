@@ -1,3 +1,8 @@
+/*!
+ * jQuery-Tourer v1.0.1
+ * Copyright 2020 Gerard Balaoro
+ * Licensed under MIT license
+ */
 ;(function($) {
 	$.fn.tour = function() {
 		var wrapper = this,

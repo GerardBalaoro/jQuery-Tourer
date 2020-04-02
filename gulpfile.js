@@ -18,6 +18,7 @@ function js() {
 				ext: {
 					min: '.min.js',
 				},
+				preserveComments: 'some'
 			})
 		)
 		.pipe(dest('dist/'))
@@ -33,7 +34,9 @@ function css() {
 		)
 		.pipe(rename({ basename: 'jquery-tourer' }))
 		.pipe(dest('dist/'))
-		.pipe(cssnano())
+		.pipe(cssnano({
+			discardComments: true
+		}))
 		.pipe(rename({ extname: '.min.css' }))
 		.pipe(dest('dist/'))
 }
