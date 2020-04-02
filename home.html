@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>jQuery-Tourer | Gerard Balaoro</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A Simple Product Tour and Showcase Plugin for jQuery">
+	<meta name="author" content="Gerard Balaoro">
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Open Sans Font -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+	 rel='stylesheet' type='text/css'>
+	<!-- FontAwesome JS -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+	 crossorigin="anonymous"></script>
+	<!-- Global CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="assets/css/elegant-font.min.css">
+	<link rel="stylesheet" href="assets/css/prism.min.css">
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+	<!-- Tourer CSS -->
+	<link rel="stylesheet" href="dist/jquery-tourer.css">
+
+	<!-- GitHub Button JS -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+	<!-- Twitter Button JS -->
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+
+<body class="landing-page">
+	<div class="page-wrapper">
+		<!-- Header -->
+		<header class="header text-center">
+			<div class="container">
+				<div class="branding" id="logo">
+					<h1 class="logo">
+						<span aria-hidden="true" class="icon fas fa-bus"></span>
+						<span class="text-highlight">jQuery</span><span class="text-bold">Tourer</span>
+					</h1>
+				</div>
+				<div class="tagline">
+					<p>A Simple Product Tour and Showcase Plugin for jQuery</p>
+					<img src="https://img.shields.io/github/release/GerardBalaoro/jQuery-Tourer.svg" alt="VERSION">
+					<img src="https://img.shields.io/github/license/GerardBalaoro/jQuery-Tourer.svg" alt="LICENSE">
+					<img src="https://zenodo.org/badge/doi/10.5281/zenodo.1473134.svg" alt="DOI">
+				</div>
+				<div class="social-container">
+					<!-- Github Buttons -->
+					<div class="github-btn mb-2">
+						<a class="github-button" href="https://github.com/GerardBalaoro/jQuery-Tourer" data-size="large" data-icon="octicon-star"
+						 aria-label="Star GerardBalaoro/jQuery-Tourer on GitHub">Star</a>
+						<a class="github-button" href="https://github.com/GerardBalaoro" data-size="large" aria-label="Follow @GerardBalaoro on GitHub">Follow
+							@GerardBalaoro</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Features -->
+		<section class="cards-section text-center">
+			<div class="container">
+				<h2 class="title">It's Very Easy To Integrate</h2>
+				<div class="intro">
+					<p>Click the Button Below for a Quick Demonstration</p>
+					<div class="cta-container">
+						<button class="btn btn-primary btn-cta tour-start"><i class="fas fa-play-circle"></i> Start Tour</button>
+						<a id="download" class="btn btn-green btn-cta" href="https://github.com/GerardBalaoro/jQuery-Tourer/releases" target="_blank"><i class="fas fa-cloud-download-alt"></i>
+							Download Now
+						</a>
+					</div>
+				</div>
+
+				<div id="cards-wrapper" class="cards-wrapper row">
+					<div class="item item-green col-lg-4 col-md-4">
+						<div class="item-inner">
+							<div class="icon-holder">
+								<i class="icon fas fa-mobile-alt"></i>
+							</div>
+							<h3 class="title">Responsive</h3>
+							<p class="intro">Tooltips become modals on devices with smaller screens</p>
+						</div>
+					</div>
+					<div class="item item-pink item-2 col-lg-4 col-md-4">
+						<div class="item-inner">
+							<div class="icon-holder">
+								<i class="icon fas fa-brush"></i></span>
+							</div>
+							<h3 class="title">Customizable</h3>
+							<p class="intro">You can customize your content even with styles of your own</p>
+						</div>
+					</div>
+					<div class="item item-blue item-2 col-lg-4 col-md-4">
+						<div class="item-inner">
+							<div class="icon-holder">
+								<i class="icon fas fa-images"></i></span>
+							</div>
+							<h3 class="title">Supports Images</h3>
+							<p class="intro">In devices with smaller displays, you can add images to showcase your features</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Documentation -->
+		<div class="doc-wrapper">
+			<div class="container">
+				<div id="doc-header" class="doc-header text-center">
+					<h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Getting Started</h1>
+				</div>				
+				<div class="doc-body row">
+					<div class="doc-content col-md-9 col-12 order-1">
+						<div class="content-inner">
+							<!-- Installation -->
+							<section id="installation-section" class="doc-section">
+								<h2 class="section-title">Installation</h2>
+								<div id="css" class="section-block">
+									<h3 class="block-title">CSS</h3>
+									<p>
+										Copy-paste the stylesheet <b class="text-info">&lt;link&gt;</b> into your 
+										<b class="text-info">&lt;head&gt;</b> to load our CSS.
+									</p>
+									<pre><code class="language-markup">
+&lt;!-- Tourer CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;dist/jquery-tourer.css&quot;&gt;
+									</code></pre>
+								</div>
+								<div id="js" class="section-block">
+									<h3 class="block-title">Javascript</h3>
+									<p>
+										Since this is a jQuery plugin, make sure that the library was included first
+										before including our <b class="text-info">&lt;script&gt;</b>.
+									</p>
+									<pre><code class="language-markup">
+&lt;!-- jQuery --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Tourer JS --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;dist/jquery-tourer.js&quot;&gt;&lt;/script&gt;
+									</code></pre>
+								</div>
+							</section>
+							<!-- Usage -->
+							<section id="usage-section" class="doc-section">
+								<h2 class="section-title">Usage</h2>
+								<div id="structure" class="section-block">
+									<h3 class="block-title">Structure</h3>
+									<p>
+										The <b class="text-info">tour-wrapper</b> class serves as the over all
+										container for all out the tour elements. It contains elements <b class="text-success">
+										li</b>.<b class="text-info">tour-step</b> which are the "steps" of the tour.
+									</p>
+									<div class="code-block">										
+										<pre><code class="language-markup">
+&lt;ul class=&quot;tour-wrapper&quot;&gt;
+	&lt;li class=&quot;tour-step&quot; target=&quot;#logo&quot;&gt;
+		&lt;span&gt;Step 1&lt;/span&gt;
+		&lt;div class=&quot;tour-content bottom&quot;&gt;
+			&lt;h2&gt;Step Number 1&lt;/h2&gt;
+			&lt;p&gt;
+				This is a normal step. In larger displays, this is shown as a tooltip
+				and the image is hidden. On devices with smaller screens, this will
+				be shown as a modal.
+			&lt;/p&gt;
+			&lt;img src=&quot;assets/images/step-1.png&quot; alt=&quot;step 1&quot;&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tour-overlay&quot;&gt;&lt;/div&gt;
+										</code></pre>
+									</div>
+									<div class="callout-block callout-info">
+										<div class="icon-holder">
+											<i class="fas fa-info-circle"></i>
+										</div>
+										<div class="content">
+											<h4 class="callout-title">.tour-overlay</h4>
+											<p>
+												This acts as a "barrier" to prevent interaction to the actual webpage
+												elements during mobile mode or when an unbound element is shown.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div id="steps" class="section-block">
+									<h3 class="block-title">Tour Steps</h3>
+									<div class="code-block">										
+										<pre><code class="language-markup">
+&lt;!-- Add &apos;unbound&apos; class to always show modal instead of a tooltip --&gt;
+&lt;!-- Use the target attribute to denote which element the step will be bound on --&gt;
+&lt;li class=&quot;tour-step&quot; target=&quot;#logo&quot;&gt;
+	&lt;!-- Short Title (For Large Displays) --&gt;
+	&lt;span&gt;Step 1&lt;/span&gt;
+
+	&lt;!-- Use classes [top, bottom, right, left] for Tooltip Placement --&gt;
+	&lt;div class=&quot;tour-content bottom&quot;&gt;
+		&lt;!-- Full Title (On Mobile Devices) --&gt;
+		&lt;h2&gt;Step Number 1&lt;/h2&gt;
+		&lt;!-- Body --&gt;		
+		&lt;p&gt;
+			This is a normal step. In larger displays, this is shown as a tooltip
+			and the image is hidden. On devices with smaller screens, this will
+			be shown as a modal.
+		&lt;/p&gt;
+		&lt;!-- Image (Hidden on Large Displays) --&gt;
+		&lt;img src=&quot;assets/images/step-1.png&quot; alt=&quot;step 1&quot;&gt;
+	&lt;/div&gt;
+&lt;/li&gt;
+										</code></pre>
+									</div>
+									<div class="callout-block callout-success">
+										<div class="icon-holder">
+											<i class="fas fa-check-circle"></i>
+										</div>
+										<div class="content">
+											<h4 class="callout-title">Target Element</h4>
+											<p>
+												Then target attribute accepts any <b>single</b> element
+												jQuery selector string.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div id="init" class="section-block">
+									<h3 class="block-title">Initialization & Methods</h3>
+									<div class="code-block">										
+										<pre><code class="language-javascript">
+// Initializate Tour Wrapper
+// This is done automatically on page load
+$('.tour-wrapper').tour();
+
+// This creates two event listeners
+$('.tour-wrapper').trigger('start-tour'); // Starts Tour
+$('.tour-wrapper').trigger('stop-tour'); // Ends Tour
+
+// These event listeners are automatically
+// bound to the following buttons, respectively
+
+$('.start-tour').click() // Triggers 'star-tour'
+$('.stop-tour').click() // Triggers 'stop-tour'
+										</code></pre>
+									</div>
+								</div>
+							</section>
+							<!-- License -->
+							<section id="license-section" class="doc-section">
+								<h2 class="section-title">License</h2>
+								<div class="section-block">
+									<div class="jumbotron text-left">
+										<h1 class="text-center">MIT LICENSE</h1>
+										<p>
+											Copyright &copy; <span id="year">2018</span> <b><a href="https://github.com/GerardBalaoro" target="_blank">Gerard Balaoro</a></b>
+											<br><br>
+											Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+											<br><br>	
+											The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+											<br><br>	
+											THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+										</p>
+										<div class="author-profile text-center">
+											<div class="center-block">
+												<img src="https://avatars1.githubusercontent.com/u/13101267" alt=GerardBalaoro" style="border-radius: 100%">
+											</div>
+										</div>
+										<div class="speech-bubble text-center">
+											<h3 class="speech-title">Like this Project?</h3>
+
+											<p>
+												Give it a star on <a href="https://github.com/GerardBalaoro/jQuery-Tourer">GitHub</a>.
+												Help me improve this plugin by contributing to the reponsitory.												
+											</p>
+
+											<a class="github-button" href="https://github.com/GerardBalaoro/jQuery-Tourer" data-icon="octicon-star" aria-label="Star GerardBalaoro/jQuery-Tourer on GitHub">Star</a>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Credits -->
+							<section id="credits-section" class="doc-section">
+								<h2 class="section-title">Credits</h2>
+								<div class="section-block">
+									<div class="callout-block">
+										<div class="icon-holder">
+											<i class="fas fa-code-branch"></i>
+										</div>
+										<div class="content">
+											<h4 class="callout-title">CodyHouse/product-tour</h4>
+											<p>
+												This project was forked from <a href="https://codyhouse.co/gem/product-tour/">the orginal work of CodyHouse</a>,
+												which is published under the <a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3 Clause License</a>.
+											</p>
+											<a class="github-button" href="https://github.com/CodyHouse" aria-label="Follow @CodyHouse on GitHub">Follow @CodyHouse</a>
+											<a href="https://twitter.com/CodyWebHouse?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @CodyWebHouse</a>
+										</div>
+									</div>
+									<div class="callout-block">
+										<div class="icon-holder">
+											<i class="fas fa-palette"></i>
+										</div>
+										<div class="content">
+											<h4 class="callout-title">PrettyDocs Template</h4>
+											<p>
+												The template used in this project was created by <a href="https://twitter.com/3rdwave_themes">Xiaoying Riley</a>
+												under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License (CC BY 3.0)</a>.
+												<br><br>
+												See more of her work on <a href="https://themes.3rdwavemedia.com">https://themes.3rdwavemedia.com</a>.
+											</p>
+											<a class="github-button" href="https://github.com/xriley/PrettyDocs-Theme" data-icon="octicon-star" aria-label="Star xriley/PrettyDocs-Theme on GitHub">Star</a>
+											<a href="https://twitter.com/3rdwave_themes?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Tweet to @3rdwave_themes</a>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<!--//doc-content-->
+					<div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+						<div id="doc-nav" class="doc-nav">
+							<nav id="doc-menu" class="nav doc-menu flex-column sticky">
+								<a class="nav-link scrollto" href="#installation-section">Installation</a>
+								<nav class="doc-sub-menu nav flex-column">
+									<a class="nav-link scrollto" href="#css">CSS</a>
+									<a class="nav-link scrollto" href="#js">Javascript</a>
+								</nav>
+								<a class="scrollto" href="#usage-section">Usage</a>
+								<nav class="doc-sub-menu nav flex-column">
+									<a class="nav-link scrollto" href="#structure">Structure</a>
+									<a class="nav-link scrollto" href="#steps">Tour Steps</a>
+									<a class="nav-link scrollto" href="#init">Initialization & Methods</a>
+								</nav>
+								<a class="nav-link scrollto" href="#license-section">License</a>
+								<a class="nav-link scrollto" href="#credits-section">Credits</a>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<ul class="tour-wrapper">
+		<li class="tour-step" target="#logo">
+			<span>Step 1</span>
+			<div class="tour-content bottom">
+				<h2>Step Number 1</h2>
+				<p>
+					This is a normal step. In larger displays, this is shown as a tooltip
+					and the image is hidden. On devices with smaller screens, this will
+					be shown as a modal.
+				</p>
+				<img src="assets/images/step-1.png" alt="step 1">
+			</div>
+		</li>
+		<li class="tour-step">
+			<span>Step 2</span>
+			<div class="tour-content unbound top">
+				<h2>Step Number 2</h2>
+				<p>
+					This is an unbound step, it displays as a modal even in large displays.
+					In case the plugin does not find the target element, that specific step
+					automatically becomes unbound.
+				</p>
+				<img src="assets/images/step-2.png" alt="step 1">
+			</div>
+		</li>
+		<li class="tour-step" target="#download">
+			<span>Step 3</span>
+			<div class="tour-content left">
+				<h2>Step Number 3</h2>
+				<p>This shows the tooltip at the left side of the #download element.</p>
+				<img src="assets/images/step-3.png" alt="step 3">
+			</div>
+		</li>
+	</ul>
+	<div class="tour-overlay"></div>
+
+	<footer class="footer text-center">
+		<div class="container">
+			<small class="copyright">Theme <span class="text-info bold">PrettyDocs</span> Designed with <i class="fas fa-heart"></i> by <a
+				 href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a></small>
+		</div>
+	</footer>
+
+	<!-- Main Javascript -->
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/stickyfill.min.js"></script>
+	<script type="text/javascript" src="assets/js/prism.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<!-- Tourer JS -->
+	<script type="text/javascript" src="dist/jquery-tourer.js"></script>
+</body>
+
+</html>

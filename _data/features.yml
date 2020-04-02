@@ -1,0 +1,12 @@
+- name: Responsive
+  icon: fas fa-mobile-alt
+  color: green
+  description: Tooltips become modals on devices with smaller screens
+- name: Customizable
+  icon: fas fa-brush
+  color: pink
+  description: You can customize your content even with styles of your own
+- name: Supports Images
+  icon: fas fa-images
+  color: blue
+  description: In devices with smaller displays, you can add images to showcase your features

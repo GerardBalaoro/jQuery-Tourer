@@ -529,6 +529,7 @@ select {
   background-clip: padding-box;
   position: relative;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .callout-block a {
@@ -1370,4 +1371,16 @@ select {
   .cards-section .item-inner {
     padding: 30px 15px;
   }
+}
+
+pre.highlight {
+  border-radius: 5px;
+  margin: 25px auto;
+}
+
+code.highlighter-rouge {
+  background-color: hsla(200, 82%, 93%, 1);
+  color: hsla(200, 82%, 54%, 1);
+  border-radius: 5px;
+  padding: 2px 4px;
 }

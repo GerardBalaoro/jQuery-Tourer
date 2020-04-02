@@ -1,0 +1,35 @@
+<ul class="tour-wrapper">
+    <li class="tour-step" target="#logo">
+        <span>Step 1</span>
+        <div class="tour-content bottom">
+            <h2>Step Number 1</h2>
+            <p>
+                This is a normal step. In larger displays, this is shown as a tooltip
+                and the image is hidden. On devices with smaller screens, this will
+                be shown as a modal.
+            </p>
+            <img src="assets/images/step-1.png" alt="step 1">
+        </div>
+    </li>
+    <li class="tour-step">
+        <span>Step 2</span>
+        <div class="tour-content unbound top">
+            <h2>Step Number 2</h2>
+            <p>
+                This is an unbound step, it displays as a modal even in large displays.
+                In case the plugin does not find the target element, that specific step
+                automatically becomes unbound.
+            </p>
+            <img src="assets/images/step-2.png" alt="step 1">
+        </div>
+    </li>
+    <li class="tour-step" target="#download">
+        <span>Step 3</span>
+        <div class="tour-content left">
+            <h2>Step Number 3</h2>
+            <p>This shows the tooltip at the left side of the #download element.</p>
+            <img src="assets/images/step-3.png" alt="step 3">
+        </div>
+    </li>
+</ul>
+<div class="tour-overlay"></div>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- 
+
+	"I am because we are"
+
+ -->
+<html lang="en">
+<head>
+	<title>{{ site.title }}</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="author" content="{{ site.author }}">
+
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/elegant-font.min.css">
+	<link rel="stylesheet" href="assets/css/prism.min.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/jquery-tourer.css">
+</head>
+
+<body class="landing-page">
+	<div class="page-wrapper">
+		<!-- Header -->
+		<header class="header text-center">
+			<div class="container">
+				<div class="branding" id="logo">
+					<h1 class="logo">
+						<span aria-hidden="true" class="icon fas fa-bus"></span>
+						{% assign title = site.styled_title | split: '::' %}
+						<span class="text-highlight">{{ title | first }}</span><span class="text-bold">{{ title | last }}</span>
+					</h1>
+				</div>
+				<div class="tagline">
+					<p>{{ site.description }}</p>
+					{% for shield in site.shields %}
+						<img src="{{ shield.src }}" alt="{{ shield.alt }}">
+					{% endfor %}
+				</div>
+				<div class="social-container">
+					<!-- Github Buttons -->
+					<div class="github-btn mb-2">
+						<a class="github-button" href="https://github.com/{{ site.github_repository }}" data-size="large" data-icon="octicon-star"
+						 aria-label="Star {{ site.github_repository }} on GitHub">Star</a>
+						<a class="github-button" href="https://github.com/{{ site.github_username }}" data-size="large" aria-label="Follow @{{ site.github_username }} on GitHub">Follow
+							@{{ site.github_username }}</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		{{ content }}
+		
+		{% include tour.html %}
+
+	</div>
+
+	<footer class="footer text-center">
+		<div class="container">
+			<small class="copyright">Theme <span class="text-info bold">PrettyDocs</span> Designed with <i class="fas fa-heart"></i> by <a
+				 href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a></small>
+		</div>
+	</footer>
+
+	<!-- Main Javascript -->
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/stickyfill.min.js"></script>
+	<script type="text/javascript" src="assets/js/prism.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<!-- Tourer JS -->
+	<script type="text/javascript" src="assets/js/jquery-tourer.js"></script>
+</body>
+</html>

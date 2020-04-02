@@ -1,0 +1,26 @@
+<section id="license-section" class="doc-section">
+    <h2 class="section-title">License</h2>
+    <div class="section-block">
+        <div class="jumbotron text-left">
+            <h1 class="text-center" style="margin-bottom:10px">{{ site.data.license.title }}</h1>
+            <div class="text-center">
+                Copyright &copy {{ 'now' | date: "%Y" }} 
+                <b><a href="http://github.com/{{ site.github_username }}">{{ site.author }}</a></b>
+            </div>
+            {{ site.data.license.body | markdownify }}
+            <div class="author-profile text-center">
+                <div class="center-block">
+                    <img src="https://avatars.githubusercontent.com/{{ site.github_username }}" alt={{ site.github_username }}" style="border-radius: 100%">
+                </div>
+            </div>
+            <div class="speech-bubble text-center">
+                <h3 class="speech-title">Like this Project?</h3>
+                <p>
+                    Give it a star on <a href="https://github.com/{{ site.github_repository }}">GitHub</a>.
+                    Help me improve this plugin by contributing to the reponsitory.												
+                </p>
+                <a class="github-button" href="https://github.com/{ site.github_repository }}" data-icon="octicon-star" aria-label="Star { site.github_repository }} on GitHub">Star</a>
+            </div>
+        </div>
+    </div>
+<section
