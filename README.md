@@ -11,17 +11,17 @@
 
 ### Using NPM
 
-```sh
-$ npm install jquery-tourer
+```bash
+npm install jquery-tourer
 ```
 
 ### Using Yarn
 
-```sh
-$ yarn add jquery-tourer
+```bash
+yarn add jquery-tourer
 ```
 
-### Via CDN
+### Using CDN
  
 ```html 
 <!-- Import jQuery first -->
