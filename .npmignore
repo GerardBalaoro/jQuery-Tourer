@@ -2,6 +2,7 @@
 package-lock.json
 yarn.lock
 /.vscode
+/.github
 _site
 .jekyll-cache
 *.sh
