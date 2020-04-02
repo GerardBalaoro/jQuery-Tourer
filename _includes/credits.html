@@ -1,19 +1,35 @@
 <section id="credits-section" class="doc-section">
-    <h2 class="section-title">Credits</h2>
-    <div class="section-block">
-        {% for credit in site.data.credits %}
-            <div class="callout-block">
-                <div class="icon-holder">
-                    <i class="{{ credit.icon }}"></i>
-                </div>
-                <div class="content">
-                    <h4 class="callout-title">{{ credit.name }}</h4>
-                    {{ credit.content | markdownify }}
-                    <a class="github-button" href="https://github.com/{{ credit.github_repository }}" data-icon="octicon-star" aria-label="Star {{ credit.github_repository }} on GitHub">Star</a>
-                    <a class="github-button" href="https://github.com/{{ credit.github_username }}" aria-label="Follow @{{ credit.github_username}} on GitHub">Follow @{{ credit.github_username}}</a>
-                    <a href="https://twitter.com/{{ credit.twitter_username }}" class="twitter-follow-button" data-show-count="false">Follow @{{ credit.twitter_username}}</a>
-                </div>
-            </div>
-        {% endfor %}
+  <h2 class="section-title">Credits</h2>
+  <div class="section-block">
+    {% for credit in site.data.credits %}
+    <div class="callout-block">
+      <div class="icon-holder">
+        <i class="{{ credit.icon }}"></i>
+      </div>
+      <div class="content">
+        <h4 class="callout-title">{{ credit.name }}</h4>
+        {{ credit.content | markdownify }}
+        <a
+          class="github-button"
+          href="https://github.com/{{ credit.github_repository }}"
+          data-icon="octicon-star"
+          aria-label="Star {{ credit.github_repository }} on GitHub"
+          >Star</a
+        >
+        <a
+          class="github-button"
+          href="https://github.com/{{ credit.github_username }}"
+          aria-label="Follow @{{ credit.github_username}} on GitHub"
+          >Follow @{{ credit.github_username}}</a
+        >
+        <a
+          href="https://twitter.com/{{ credit.twitter_username }}"
+          class="twitter-follow-button"
+          data-show-count="false"
+          >Follow @{{ credit.twitter_username}}</a
+        >
+      </div>
     </div>
+    {% endfor %}
+  </div>
 </section>

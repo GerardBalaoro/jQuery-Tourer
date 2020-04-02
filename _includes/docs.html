@@ -1,48 +1,41 @@
 <div class="doc-wrapper">
-    <div class="container">
-        <div id="doc-header" class="doc-header text-center">
-            <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Getting Started</h1>
-        </div>
-        <div class="doc-body row">
-            <div class="doc-content col-md-9 col-12 order-1">
-                <div class="content-inner">
-                    {% assign sections = site.docs | group_by: "section" %}
-                    {% for section in sections %}
-                        <section id="{{ section.name | downcase }}-section" class="doc-section">
-                            <h2 class="section-title">{{ section.name }}</h2>
-                            {% for block in section.items %}
-                                <div id="{{ section.name | downcase }}-{{ block.title | downcase }}" class="section-block">
-                                    <h3 class="block-title">{{ block.title }}</h3>
-                                    {{ block.content }}
-                                </div>  
-                            {% endfor %}
-                        </section>  
-                    {% endfor %}                    
-                    {% include license.html %}
-                    {% include credits.html %}
-                </div>
-            </div>
-            <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
-                <div id="doc-nav" class="doc-nav" style="position:relative">
-                    <nav id="doc-menu" class="nav doc-menu flex-column sticky" style="padding:30px">
-                        {% for section in sections %}
-                            <a class="nav-link scrollto" href="#{{ section.name | downcase }}-section">
-                                {{ section.name }}
-                            </a>
-                            <nav class="doc-sub-menu nav flex-column">
-                                {% for block in section.items %}
-                                    <a class="nav-link scrollto" href="#{{ section.name | downcase }}-{{ block.title | downcase }}">
-                                        {{ block.title }}
-                                    </a> 
-                                {% endfor %}
-                            </nav>
-                        {% endfor %}
-                        <a class="nav-link scrollto" href="#license-section">License</a>
-                        <a class="nav-link scrollto" href="#credits-section">Credits</a>
-                    </nav>
-
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div id="doc-header" class="doc-header text-center">
+      <h1 class="doc-title">
+        <i class="icon fa fa-paper-plane"></i> Getting Started
+      </h1>
     </div>
+    <div class="doc-body row">
+      <div class="doc-content col-md-9 col-12 order-1">
+        <div class="content-inner">
+          {% assign docs = site.docs | sort: "order" %} {% for doc in docs %}
+          <section id="{{ doc.title | downcase }}-section" class="doc-section">
+            <h2 class="section-title">{{ doc.title }}</h2>
+            {{ doc.content }}
+          </section>
+          {% endfor %} {% include license.html %} {% include credits.html %}
+        </div>
+      </div>
+      <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+        <div id="doc-nav" class="doc-nav" style="position:relative">
+          <nav
+            id="doc-menu"
+            class="nav doc-menu flex-column sticky"
+            style="padding:30px"
+          >
+            {% for doc in docs %}
+            <a
+              class="nav-link scrollto"
+              href="#{{ doc.title | downcase }}-section"
+            >
+              {{ doc.title }}
+            </a>
+            {% endfor %}
+            <a class="nav-link scrollto" href="#license-section">License</a>
+            <a class="nav-link scrollto" href="#credits-section">Credits</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

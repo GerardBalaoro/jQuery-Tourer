@@ -1,30 +1,36 @@
-<!-- Features -->
 <section class="cards-section text-center">
-    <div class="container">
-        <h2 class="title">It's Very Easy To Integrate</h2>
-        <div class="intro">
-            <p>Click the Button Below for a Quick Demonstration</p>
-            <div class="cta-container">
-                <button class="btn btn-primary btn-cta tour-start"><i class="fas fa-play-circle"></i> Start Tour</button>
-                <a id="download" class="btn btn-green btn-cta" href="https://github.com/{{ site.github_repository }}/releases" target="_blank">
-                    <i class="fas fa-cloud-download-alt"></i>
-                    Download Now
-                </a>
-            </div>
-        </div>
-
-        <div id="cards-wrapper" class="cards-wrapper row">
-            {% for feature in site.data.features %}
-                <div class="item item-{{ feature.color }} col-lg-4 col-md-4">
-                    <div class="item-inner">
-                        <div class="icon-holder">
-                            <i class="icon {{ feature.icon }}"></i>
-                        </div>
-                        <h3 class="title">{{ feature.name }}</h3>
-                        <p class="intro">{{ feature.description }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
+  <div class="container">
+    <h2 class="title">It's Very Easy To Integrate</h2>
+    <div class="intro">
+      <p>Click the Button Below for a Quick Demonstration</p>
+      <div class="cta-container">
+        <button class="btn btn-primary btn-cta tour-start">
+          <i class="fas fa-play-circle"></i> Start Tour
+        </button>
+        <a
+          id="download"
+          class="btn btn-green btn-cta"
+          href="https://github.com/{{ site.github_repository }}/releases"
+          target="_blank"
+        >
+          <i class="fas fa-cloud-download-alt"></i>
+          Download Now
+        </a>
+      </div>
     </div>
+
+    <div id="cards-wrapper" class="cards-wrapper row">
+      {% for feature in site.data.features %}
+      <div class="item item-{{ feature.color }} col-lg-4 col-md-4">
+        <div class="item-inner">
+          <div class="icon-holder">
+            <i class="icon {{ feature.icon }}"></i>
+          </div>
+          <h3 class="title">{{ feature.name }}</h3>
+          <p class="intro">{{ feature.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
