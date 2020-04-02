@@ -1,4 +1,4 @@
-@import './node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import 'bourbon/app/assets/stylesheets/bourbon';
 @import 'partials/variables';
 @import 'partials/mixins';
 @import 'partials/layout';
@@ -18,7 +18,7 @@ Main Components
 	@include transition(opacity 0.4s 0s, visibility 0s 0.4s);
 
 	&::before {
-		/* never visible - this is used in jQuery to check the current MQ */ 
+		/* never visible - this is used in jQuery to check the current MQ */
 		display: none;
 		content: 'mobile';
 	}
@@ -29,7 +29,7 @@ Main Components
 		opacity: 1;
 		@include transition(opacity 0.4s 0s, visibility 0s 0s);
 	}
-	
+
 	@include MQ(M) {
 		max-width: 500px;
 		max-height: 600px;
@@ -47,9 +47,9 @@ Main Components
 			max-height: none;
 			opacity: 1;
 			@include transform(translateX(0));
-			
+
 			&::before {
-				/* never visible - this is used in jQuery to check the current MQ */ 
+				/* never visible - this is used in jQuery to check the current MQ */
 				content: 'desktop';
 			}
 
@@ -66,12 +66,12 @@ Main Components
 	z-index: 1;
 	width: 100%;
 	left: 0;
-    top: 0;
+	top: 0;
 	background-color: $color-4;
 	border-radius: 4px;
-	box-shadow: 0 3px 10px rgba(#000, .2);
+	box-shadow: 0 3px 10px rgba(#000, 0.2);
 	opacity: 0;
-	
+
 	/* Force Hardware Acceleration */
 	@include transform(translateZ(0));
 
@@ -94,11 +94,11 @@ Main Components
 		overflow: hidden;
 		text-indent: 100%;
 		white-space: nowrap;
-		
+
 		/* hide on mobile */
 		display: none;
 	}
-	
+
 	&::after {
 		/* this is used to create the pulse animation */
 		content: '';
@@ -108,11 +108,11 @@ Main Components
 		top: 0;
 		left: 0;
 		border-radius: inherit;
-		
+
 		/* Force Hardware Acceleration */
 		@include transform(translateZ(0));
 		@include backface-visibility(hidden);
-		
+
 		/* hide on mobile */
 		display: none;
 	}
@@ -161,11 +161,13 @@ Main Components
 		box-shadow: none;
 		@include transition(visibility 0s 0.4s);
 
-		> span, &::after {
+		> span,
+		&::after {
 			display: block;
 		}
 
-		.active &, .active &.move-left {
+		.active &,
+		.active &.move-left {
 			@include transition(visibility 0s 0.4s);
 			@include transform(translateX(0));
 		}
@@ -180,10 +182,10 @@ Main Components
 
 			&::after {
 				@include animation(cd-pulse 2s infinite);
-				@include animation-delay(.5s);
+				@include animation-delay(0.5s);
 			}
 
-			.tour-content  {
+			.tour-content {
 				opacity: 1;
 			}
 		}
@@ -216,9 +218,13 @@ Main Components
 		display: none;
 	}
 
-	h1, h2, h3, h4, h5 {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
 		line-height: 1.2;
-		margin-bottom: .4em;
+		margin-bottom: 0.4em;
 	}
 
 	p {
@@ -242,18 +248,19 @@ Main Components
 		overflow: hidden;
 		text-indent: 100%;
 		white-space: nowrap;
-		
-		&::after, &:before {
+
+		&::after,
+		&:before {
 			/* these are the 2 lines of the 'X' icon */
 			content: '';
 			position: absolute;
 			left: 50%;
-		    top: 50%;
-		    height: 2px;
+			top: 50%;
+			height: 2px;
 			width: 16px;
 			border-radius: 4em;
 			background-color: shade($color-4, 20%);
-			
+
 			/* Force Hardware Acceleration */
 			@include transform(translateZ(0));
 			@include backface-visibility(hidden);
@@ -264,14 +271,16 @@ Main Components
 		}
 
 		&::before {
-			@include transform(translateX(-50%) translateY(-50%) rotate(-45deg));
+			@include transform(
+				translateX(-50%) translateY(-50%) rotate(-45deg)
+			);
 		}
 	}
 
 	span.tour-step-count {
-		/* step count e.g. 1 of 3*/		
+		/* step count e.g. 1 of 3*/
 		float: left;
-		padding-top: .1em;
+		padding-top: 0.1em;
 	}
 }
 
@@ -280,10 +289,10 @@ Main Components
 		position: absolute;
 		width: 340px;
 		border-radius: 4px;
-		box-shadow: 0 3px 20px rgba(#000, .15);
+		box-shadow: 0 3px 20px rgba(#000, 0.15);
 		opacity: 0;
 		background-color: $color-4;
-		@include transition(opacity .4s);
+		@include transition(opacity 0.4s);
 		border-color: $color-4;
 
 		p {
@@ -304,12 +313,13 @@ Main Components
 			@include transform(translateY(-50%));
 		}
 
-		&.right { 
+		&.right {
 			left: calc(100% + 15px);
 			@include transform(translateY(-50%));
 		}
 
-		&.left, &.right {
+		&.left,
+		&.right {
 			top: 50%;
 		}
 
@@ -323,15 +333,18 @@ Main Components
 			@include transform(translateX(-50%));
 		}
 
-		&.top, &.bottom {
+		&.top,
+		&.bottom {
 			left: 50%;
 		}
 
-		&.left::before, &.right::before {
+		&.left::before,
+		&.right::before {
 			@include center(y);
-		} 
+		}
 
-		&.top::before, &.bottom::before {
+		&.top::before,
+		&.bottom::before {
 			@include center(x);
 		}
 
@@ -367,7 +380,6 @@ Main Components
 
 	li {
 		display: inline-block;
-		float: left;
 
 		&:first-of-type {
 			margin-right: 1.5em;
@@ -398,7 +410,7 @@ Main Components
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(#000, .6);
+	background-color: rgba(#000, 0.6);
 	visibility: hidden;
 	opacity: 0;
 	@include transition(opacity 0.4s 0s, visibility 0s 0.4s);
@@ -411,7 +423,6 @@ Main Components
 
 	&:not(.unbound) {
 		@include MQ(L) {
-
 			&.is-visible {
 				opacity: 0;
 				@include animation(cd-fade-in 2.1s);
@@ -421,11 +432,13 @@ Main Components
 }
 
 @include keyframes(cd-fade-in) {
-	0%, 100% {
+	0%,
+	100% {
 		opacity: 0;
 	}
 
-	14%, 40% {
+	14%,
+	40% {
 		opacity: 1;
 	}
 }
