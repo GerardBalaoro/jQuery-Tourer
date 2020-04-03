@@ -1,5 +1,5 @@
 /*!
- * jQuery-Tourer v1.0.1
+ * jQuery-Tourer v1.0.0
  * Copyright 2020 Gerard Balaoro
  * Licensed under MIT license
  */

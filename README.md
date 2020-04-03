@@ -26,8 +26,8 @@ yarn add jquery-tourer
 ```html 
 <!-- Import jQuery first -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/jquery-tourer@1.0.1/dist/jquery-tourer.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/jquery-tourer@1.0.1/dist/jquery-tourer.min.css">
+<script type="text/javascript" src="https://unpkg.com/jquery-tourer@latest/dist/jquery-tourer.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jquery-tourer@latest/dist/jquery-tourer.min.css">
 ```
 
 ## Usage
