@@ -6,7 +6,7 @@ const rename = require('gulp-rename')
 const minify = require('gulp-minify')
 
 function js() {
-    return src('src/js/script.js')
+    return src('src/js/main.js')
         .pipe(
             babel({
                 presets: ['@babel/env'],
@@ -25,7 +25,7 @@ function js() {
 }
 
 function css() {
-    return src('src/sass/style.scss')
+    return src('src/sass/main.scss')
         .pipe(
             sass({
                 includePaths: ['node_modules'],
