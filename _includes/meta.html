@@ -1,0 +1,17 @@
+{% assign title = page.title | append: ' - ' | append: site.title %}
+<title>{{ page.title | if: title , site.title }}</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta name="description" content="{{ page.description | default: site.description }}" />
+<meta name="author" content="{{ page.author | default: site.author }}" />
+<meta name="description" content="{{ page.description | default: site.description }}" />
+<meta name="keywords" content="{{ page.keywords | default: site.keywords | join: ',' }}" />
+
+{% if page.opengraph == nil or page.opengraph != false %}
+{% include opengraph.html %}
+{% endif %}
+
+<link rel="shortcut icon" href="{{ site.icon }}" />

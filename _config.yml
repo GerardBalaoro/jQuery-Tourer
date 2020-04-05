@@ -2,6 +2,12 @@ title: jQuery-Tourer
 author: Gerard Balaoro
 email: gmbalaoro@outlook.com
 description: A Simple Product Tour and Showcase Plugin for jQuery
+image: assets/images/banner.png
+icon: assets/images/favicon.ico
+keywords:
+  - jquery-plugin
+  - tour
+  - showcase
 styled_title: jQuery::Tourer
 baseurl: ''
 url: ''
@@ -9,17 +15,17 @@ twitter_username: gmbalaoro
 github_username: GerardBalaoro
 github_repository: GerardBalaoro/jQuery-Tourer
 shields:
-    - src: https://img.shields.io/github/release/GerardBalaoro/jQuery-Tourer.svg
-      alt: Version
-    - src: https://img.shields.io/github/license/GerardBalaoro/jQuery-Tourer.svg
-      alt: License
-    - src: https://zenodo.org/badge/doi/10.5281/zenodo.1473134.svg
-      alt: DOI
+  - src: https://img.shields.io/github/release/GerardBalaoro/jQuery-Tourer.svg
+    alt: Version
+  - src: https://img.shields.io/github/license/GerardBalaoro/jQuery-Tourer.svg
+    alt: License
+  - src: https://zenodo.org/badge/doi/10.5281/zenodo.1473134.svg
+    alt: DOI
 
 collections:
-    docs:
-        title: Documentation
-        output: false
+  docs:
+    title: Documentation
+    output: false
 
 theme: null
 plugins:

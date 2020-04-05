@@ -1,0 +1,23 @@
+; This file is for unifying the coding style for different editors and IDEs.
+; More information at http://EditorConfig.org
+
+root = true
+
+[Gemfile*]
+indent_style = space
+indent_size = 2
+
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[*.{js,json,html,sass}]
+indent_style = space
+indent_size = 2
+
+[assets/**]
+indent_style = ignore
+indent_size = ignore
+end_of_line = ignore
+trim_trailing_whitespace = ignore
+charset = ignore
