@@ -7,6 +7,7 @@
     <a href="https://github.com/GerardBalaoro/jQuery-Tourer/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/GerardBalaoro/jQuery-Tourer.svg" alt="LICENSE"></a>
     <img src="https://zenodo.org/badge/doi/10.5281/zenodo.1473134.svg" alt="DOI">
 </p>
+<br/>
 
 ## Installation
 
